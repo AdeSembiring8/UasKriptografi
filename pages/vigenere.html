@@ -19,9 +19,14 @@
     <title>Vigenere Cipher</title>
 
     <style>
-        .p{
+        .hasil{
+            font-size:20px ;
             font-family: 'Mulish';
+            /* font-style: italic ; */
+            color: aliceblue;
+            
         }
+        
 
         .form{
             border-radius: 6px;
@@ -34,7 +39,11 @@
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="homepage.html">KriptoKu</a>
-
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="diagonal.html">Diagonal Cipher</a></li>
+            </ul>
         </div>
     </nav>
     <!-- Masthead-->
@@ -45,12 +54,12 @@
             <table class="center">
                 <tbody>
                     <tr>
-                        <td><label class="p" for="text"> Text :</label></td>
-                        <td class="form" ><textarea style="width: 700px ; height:250px ;" class="form" id="text" placeholder="Silahkan masukkan Text" cols="50" rows="10" style="height:40em; height:15em;width: 256px;"></textarea></td>
+                        <td><label class="p" for="text"><h3> Text :</h3></label></td>
+                        <td class="form" ><textarea style="width: 700px;padding: 15px ; height:250px ;" class="form" id="text" placeholder="Silahkan Masukkan Text..." cols="50" rows="10" style="height:40em; height:15em;width: 256px;"></textarea></td>
                     </tr>
                     <tr>
-                        <td><label for="key">Key :</label></td>
-                        <td class="form"><input style="width: 700px; height: 45px;" class="form" type="text" placeholder="masukkan key" id="key" style="width: 256px;"></td>
+                        <td><label for="key"><h3> Key :</h3></label></td>
+                        <td class="form"><input style="width: 700px; padding: 15px ;height: 45px;" class="form" type="text" placeholder="Masukkan Key..." id="key" style="width: 256px;"></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -67,8 +76,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="hasil">Hasil :</label></td>
-                        <td> <input type="textbox" id="hasil"> </td>
+                        <td><label for="hasil"><h3>Hasil :</h3></label></td>
+                        <td style="display:flex ; padding-left:10px ;"><h5 id="hasil"></h5></td>
                     </tr>
                 </tbody>
             </table>
