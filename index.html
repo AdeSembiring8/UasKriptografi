@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
     <title>Vigenere Cipher</title>
 </head>
-<body>
+<body class="font">
     <header>
-        <h1>Vigenere Cipher</h1>
+        <h1 class="center">Vigenere Cipher</h1>
     </header>
-    <table>
+    <table class="center" >
         <tbody>
             <tr>
                 <td><label for="text">Text :</label></td>
-                <td><textarea id="text" cols="50" rows="10" style="height:40em; height:15em"></textarea></td>
+                <td ><textarea class="form" id="text" placeholder="Silahkan masukkan Text" cols="50" rows="10" style="height:40em; height:15em;width: 256px;"></textarea></td>
             </tr>
             <tr>
                 <td><label for="key">Key :</label></td>
-                <td><input type="text" id="key" style="width:10em"></td>
+                <td><input class="form" type="text" placeholder="masukkan key" id="key" style="width: 256px;"></td>
             </tr>
             <tr>
                 <td></td>
                 <td>
-                    <button onclick="cipherText();">Encrypt</button>
-                    <button onclick="decrypt();">Decrypt</button>
+                    <button style="margin-right:57px ;" class="button" onclick="cipherText();">Encrypt</button>
+                    <button class="button" onclick="decrypt();">Decrypt</button>
                 </td>
             </tr>
             <tr>
